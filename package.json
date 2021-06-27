@@ -1,0 +1,28 @@
+{
+  "name": "gulu",
+  "version": "1.0.0",
+  "description": "这是一个轮子组件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goforstudy/gulu-demo.git"
+  },
+  "keywords": [
+    "vue",
+    "gulu",
+    "wheel",
+    "ui"
+  ],
+  "author": "w",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/goforstudy/gulu-demo/issues"
+  },
+  "homepage": "https://github.com/goforstudy/gulu-demo#readme",
+  "dependencies": {
+    "vue": "^2.6.14"
+  }
+}
