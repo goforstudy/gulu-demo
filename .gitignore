@@ -1,3 +1,5 @@
 node_modules/
 vcs.xml
 .idea/
+.cache/
+dist/

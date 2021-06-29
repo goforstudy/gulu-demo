@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <title>gulu</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        body{
+
+        body {
             font-size: var(--font-size);
         }
-        :root{
+
+        :root {
             --button-height: 32px;
             --font-size: 14px;
             --button-bg: white;
@@ -24,7 +26,7 @@
         }
     </style>
     <style>
-        .g-button{
+        .g-button {
             font-size: var(--font-size);
             height: var(--button-height);
             padding: 0 1em;
@@ -32,19 +34,39 @@
             border: 1px solid var(--border-color);
             background: var(--button-bg);
         }
-        .g-button:hover{
+
+        .g-button:hover {
             border-color: var(--border-color-hover);
         }
-        .g-button:active{
+
+        .g-button:active {
             background-color: var(--button-active-bg);
         }
-        .g-button:focus{
+
+        .g-button:focus {
             outline: none;
         }
     </style>
 </head>
 <body>
-    <div id="app"><g-button/></div>
+<div id="app">
+    <g-button icon="setting">
+        按钮
+    </g-button>
+    <g-button>
+        按钮
+    </g-button>
+    <g-button icon="setting" icon-position="right">
+        按钮
+    </g-button>
+</div>
 </body>
 <script src="./src/app.js"></script>
+<style>
+    .icon {
+        width: 1em;
+        height: 1em;
+    }
+</style>
+<script src="//at.alicdn.com/t/font_2638907_pc21kuqhj4c.js"></script>
 </html>
