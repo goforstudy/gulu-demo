@@ -47,39 +47,53 @@
             outline: none;
         }
     </style>
+    <style>
+        section{
+            margin: 20px;
+        }
+    </style>
 </head>
 <body>
 <div id="app">
-    <g-button icon="setting">
-        按钮
-    </g-button>
-    <g-button>
-        按钮
-    </g-button>
-    <g-button icon="setting" icon-position="right">
-        按钮
-    </g-button>
-    <g-button :loading="true" icon="setting">
-        按钮
-    </g-button>
-    <g-button :loading="true">
-        按钮
-    </g-button>
-    <g-button icon="setting" :loading="true" icon-position="right">
-        按钮
-    </g-button>
-    <g-button-group>
-        <g-button icon="left">
-            上一页
+    <section>
+        <g-input value="zs" error="长度应该多于三个"></g-input>
+    </section>
+    <section>
+        <g-input value="zs" readonly></g-input>
+        <g-input value="zs" disabled></g-input>
+        <g-input value="zs"></g-input>
+    </section>
+    <section>
+        <g-button icon="setting">
+            按钮
         </g-button>
         <g-button>
-            更多
+            按钮
         </g-button>
-        <g-button icon="right" icon-position="right">
-            下一页
+        <g-button icon="setting" icon-position="right">
+            按钮
         </g-button>
-    </g-button-group>
-    <div id="test"></div>
+        <g-button :loading="true" icon="setting">
+            按钮
+        </g-button>
+        <g-button :loading="true">
+            按钮
+        </g-button>
+        <g-button icon="setting" :loading="true" icon-position="right">
+            按钮
+        </g-button>
+        <g-button-group>
+            <g-button icon="left">
+                上一页
+            </g-button>
+            <g-button>
+                更多
+            </g-button>
+            <g-button icon="right" icon-position="right">
+                下一页
+            </g-button>
+        </g-button-group>
+    </section>
 </div>
 </body>
 <script src="./src/app.js"></script>
