@@ -13,5 +13,10 @@ new Vue({
         inputChange(e) {
             console.log(e.target.value)
         },
+    },
+    data() {
+        return {
+            message: '',
+        }
     }
 })

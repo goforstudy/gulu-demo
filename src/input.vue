@@ -1,10 +1,11 @@
 <template>
   <div class="wrapper" :class="{error}">
+    <!-- input 方法 与 v-model 相结合 使input组件实现双向绑定 -->
     <input type="text" :value="value" :readonly="readonly" :disabled="disabled" 
-    @change="$emit('change', $event)"
-    @input="$emit('input', $event)"
-    @blur="$emit('blur', $event)"
-    @focus="$emit('focus', $event)"
+    @change="$emit('change', $event.target.value)"
+    @input="$emit('input', $event.target.value)"
+    @blur="$emit('blur', $event.target.value)"
+    @focus="$emit('focus', $event.target.value)"
     />
     <template v-if="error">
       <g-icon name="error" class="icon-error"></g-icon>

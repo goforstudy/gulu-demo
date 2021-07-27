@@ -77,8 +77,18 @@ describe('Input', () => {
                     vm.$on(item, callback)
                     var event = new Event(item)
                     let inputElement = vm.$el.querySelector('input')
+                    Object.defineProperty(
+                        event,
+                        'target',
+                        {
+                            value: {
+                                value: 'hi'
+                            },
+                            enumerable: true,
+                        }
+                    )
                     inputElement.dispatchEvent(event)
-                    expect(callback).to.have.been.calledWith(event)
+                    expect(callback).to.have.been.calledWith('hi')
                 }
             )
         })
