@@ -53,8 +53,26 @@
         }
     </style>
 </head>
-<body>
+<body>    
+
 <div id="app">
+
+    <section>
+        <g-row>
+            <g-col ></g-col>
+            <g-col ></g-col>
+        </g-row>
+        <g-row>
+            <g-col ></g-col>
+            <g-col ></g-col>
+            <g-col ></g-col>
+            <g-col ></g-col>
+        </g-row>
+        <g-row>
+            <g-col :span="2"></g-col>
+            <g-col :span="22"></g-col>
+        </g-row>
+    </section>
     <section>
         <g-input value="zs" error="长度应该多于三个"></g-input>
     </section>
