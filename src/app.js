@@ -32,7 +32,9 @@ new Vue({
             console.log(e.target.value)
         },
         click() {
-            this.$toast('hello world')
+            this.$toast('<p style="color: red; width: 100px">hello world this is long long words ajdkladjfkasdl</p>', {
+                enableHtml: true,
+            })
         }
     },
     data() {
