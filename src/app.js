@@ -34,6 +34,13 @@ new Vue({
         click() {
             this.$toast('<p style="color: red; width: 100px">hello world this is long long words ajdkladjfkasdl</p>', {
                 enableHtml: true,
+                position: 'middle',
+                closeButton: {
+                    text: 'close',
+                    callback: (value) => {
+                        console.log('回调',value)
+                    } 
+                }
             })
         }
     },
