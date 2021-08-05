@@ -31,10 +31,10 @@ new Vue({
         inputChange(e) {
             console.log(e.target.value)
         },
-        click() {
-            this.$toast('<p style="color: red; width: 100px">hello world this is long long words ajdkladjfkasdl</p>', {
+        clickEvent(message, position) {
+            this.$toast(message, {
                 enableHtml: true,
-                position: 'middle',
+                position,
                 closeButton: {
                     text: 'close',
                     callback: (value) => {
@@ -42,6 +42,15 @@ new Vue({
                     } 
                 }
             })
+        },
+        clickTop() {
+            this.clickEvent('我在顶部', 'top')
+        },
+        clickMiddle() {
+            this.clickEvent('我在中间', 'middle')
+        },
+        clickBottom() {
+            this.clickEvent('我在底部', 'bottom')
         }
     },
     data() {
