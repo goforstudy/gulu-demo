@@ -11,6 +11,6 @@ export default {
 </script>
 <style scoped lang="scss">
     .tabs-body{
-
+        padding-top: 1em;
     }
 </style>
