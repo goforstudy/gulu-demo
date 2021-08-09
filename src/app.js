@@ -66,7 +66,7 @@ new Vue({
     data() {
         return {
             message: '',
-            selected: 'tab1'
+            selected: 'tab3'
         }
     }
 })
