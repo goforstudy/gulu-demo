@@ -45,6 +45,10 @@ export default {
     .tabs-item{
         flex-shrink: 0;
         padding: 0 1em;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        height: 100%;
         &.active{
             background: red;
         }
