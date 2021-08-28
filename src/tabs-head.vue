@@ -14,7 +14,6 @@ export default {
     created() {
         this.eventBus.$on('update:selected', (item, vm) => {
             const {width, height, top, left} = vm.$el.getBoundingClientRect()
-            console.log(width, height, top, left)
             this.$refs.line.style.width = `${width}px`
             this.$refs.line.style.transform = `translateX(${left}px)`
         })

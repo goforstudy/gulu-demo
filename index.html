@@ -69,17 +69,57 @@
 <!-- <div style="height: 1000px; border: 10px solid #666;"></div> -->
 <div id="app"  style="margin-top: 100px; margin-left: 100px; border: 1px solid red; overflow: hidden;">
     <g-popover>
-        <template slot="content">
+        <template slot="content" slot-scope="{close}">
             <div>popover content</div>
+            <g-button @click="close">关闭</g-button>
         </template>
-        <button>点我</button>
+        <g-button>点我</g-button>
     </g-popover>
-    <g-popover>
+    <g-popover position="right">
         <template slot="content">
             <div>popover content2</div>
         </template>
-        <button>点我</button>
+        <g-button>点我</g-button>
     </g-popover>
+    <g-popover position="left">
+        <template slot="content">
+            <div>popover contentontentontentontentontentontent2</div>
+        </template>
+        <g-button>点我</g-button>
+    </g-popover>
+    <g-popover position="bottom">
+        <template slot="content" >
+            <div>popover content2</div>
+        </template>
+        <g-button>点我</g-button>
+    </g-popover>
+    <div>
+        <g-popover trigger="hover">
+            <template slot="content">
+                <div>popover content</div>
+            </template>
+            <g-button>点我</g-button>
+        </g-popover>
+        <g-popover position="right"  trigger="hover">
+            <template slot="content">
+                <div>popover content2</div>
+            </template>
+            <g-button>点我</g-button>
+        </g-popover>
+        <g-popover position="left"  trigger="hover">
+            <template slot="content">
+                <div>popover contentontentontentontentontentontent2</div>
+            </template>
+            <g-button>点我</g-button>
+        </g-popover>
+        <g-popover position="bottom"  trigger="hover">
+            <template slot="content" >
+                <div>popover content2</div>
+            </template>
+            <g-button>点我</g-button>
+        </g-popover>
+    </div>
+    
     <!-- <div style="margin-top: 100px; margin-left: 100px">
        
     </div> -->
