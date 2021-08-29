@@ -73,7 +73,7 @@ new Vue({
     data() {
         return {
             message: '',
-            selected: '2',
+            selected: ['2'],
         }
     }
 })
